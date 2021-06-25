@@ -12,12 +12,13 @@ const Current = () => {
       console.log("Not Available");
     }
     console.log("Current Mounted")
-		const response =  fetch("api.openweathermap.org/data/2.5/weather?q=ann%20arbor&appid={your_API_key}")
-    .then((resp) => {
-			// console.log("Printing response")
-			console.log(resp)
-      return resp
-    })
+		console.log(process.env.REACT_APP_API_KEY)
+		// const response =  fetch("api.openweathermap.org/data/2.5/weather?q=ann%20arbor&appid=" + mykey)
+    // .then((resp) => {
+		// 	// console.log("Printing response")
+		// 	console.log(resp)
+    //   return resp
+    // })
   });
 
   return (
